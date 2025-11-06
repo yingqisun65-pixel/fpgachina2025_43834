@@ -14,10 +14,9 @@
 
 epilepsy-fpga/  
 ├─ README.md  
-├─ REPRODUCIBLE.md              # 逐步复现实验手册（含版本、命令、耗时、注意事项）  
-├─ LICENSE                      # 建议 MIT 或 Apache-2.0  
+├─ REPRODUCIBLE.md              # 逐步复现实验手册 
+├─ LICENSE                     
 ├─ .gitignore  
-├─ requirements.txt             # PYNQ 侧 Python 依赖（pynq、numpy、matplotlib…）  
 ├─ signal/
 │  ├─ 多个LFP信号的.txt  
 │  └─ README.md  
@@ -33,7 +32,7 @@ epilepsy-fpga/
 │  └─ README.md  
 ├─ overlays/  
 │  └─ epilepsy_detection/  
-│     ├─ detection_final.bit    # 发布版产物（建议放到 Release，而不是 git 本体）  
+│     ├─ detection_final.bit   
 │     └─ detection_final.hwh  
 └─ pynq/  
       ├─ run_demo.py               # 无交互运行：加载 overlay、DMA 喂数、LED MMIO、保存结果  

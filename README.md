@@ -19,7 +19,7 @@ python3 pynq/run_demo.py
 ```
 
 
-**brief introduction**
+**brief introduction**  
 This repository is a minimal, reproducible PYNQ-based demo:
 - Prebuilt `detection_final.bit/.hwh`
 - Small sample input `data/signal_demo_small.txt `(int16, 1 value per line)

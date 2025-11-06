@@ -21,8 +21,8 @@ epilepsy-fpga/
 │  ├─ 多个LFP信号的.txt  
 │  └─ README.md  
 ├─ HLS(Vitis)/  
-│  ├─ EpilepsyDetection/        # 你的 HLS 源码目录（.h/.cpp/coef 等）   
-│  ├─ Decimator/        # 你的 HLS 源码目录（.h/.cpp/coef 等）  
+│  ├─ EpilepsyDetection/       # HLS 源码目录（.h/.cpp/coef 等）  
+│  ├─ Decimator/               # HLS 源码目录（.h/.cpp/coef 等）  
 │  └─ README.md  
 ├─ vivado/  
 │  ├─ bd/create_bd.tcl          # 从 0 重建 BD（含 IP 参数、连线、地址映射）  

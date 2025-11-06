@@ -12,44 +12,32 @@
 
 ## 仓库结构
 
-epilepsy-fpga/
-├─ README.md
-├─ REPRODUCIBLE.md              # 逐步复现实验手册（含版本、命令、耗时、注意事项）
-├─ INSTALL.md                   # 快速上手安装与板上部署
-├─ LICENSE                      # 建议 MIT 或 Apache-2.0
-├─ CITATION.cff                 # 学术引用元数据
-├─ CHANGELOG.md
-├─ .gitignore
-├─ requirements.txt             # PYNQ 侧 Python 依赖（pynq、numpy、matplotlib…）
-├─ environment.yml              # 如果用 conda
-├─ data/
-│  ├─ signal_demo_small.txt     # 100KB 左右的小样本，便于 CI 与快速演示
-│  └─ README.md
-├─ hls/
-│  ├─ EpilepsyDetection/        # 你的 HLS 源码目录（.h/.cpp/coef 等）
-│  ├─ script.tcl                # 一键 HLS：csim/csynth/cosim/export
-│  └─ README.md
-├─ vivado/
-│  ├─ bd/create_bd.tcl          # 从 0 重建 BD（含 IP 参数、连线、地址映射）
-│  ├─ scripts/build_bit.tcl     # 一键综合实现 & 生成 bit、导出 .hwh/.xsa
-│  └─ README.md
-├─ overlays/
-│  └─ epilepsy_detection/
-│     ├─ detection_final.bit    # 发布版产物（建议放到 Release，而不是 git 本体）
-│     └─ detection_final.hwh
-├─ pynq/
-│  ├─ run_demo.py               # 无交互运行：加载 overlay、DMA 喂数、LED MMIO、保存结果
-│  ├─ mmio_led.py               # LED 控制封装
-│  └─ README.md
-├─ notebooks/
-│  └─ 01_quick_demo.ipynb       # 可视化使用，但不要作为唯一入口
-├─ scripts/
-│  ├─ export_xsa.tcl            # 可选：从 Vivado 导出 XSA
-│  ├─ package_overlay.py        # 将 .bit/.hwh 打包到指定 overlays 目录
-│  └─ mk_release.sh             # 打包 demo 资源到 Release zip
-├─ tests/
-│  ├─ test_demo_output.py       # 校验 demo 输出的 sha256 / 关键统计量
-│  └─ conftest.py
-└─ .github/workflows/ci.yml     # 轻量 CI：Python 测试 + 链接/格式检查（不跑 Vivado）
+epilepsy-fpga/  
+├─ README.md  
+├─ REPRODUCIBLE.md              # 逐步复现实验手册（含版本、命令、耗时、注意事项）  
+├─ LICENSE                      # 建议 MIT 或 Apache-2.0  
+├─ .gitignore  
+├─ requirements.txt             # PYNQ 侧 Python 依赖（pynq、numpy、matplotlib…）  
+├─ signal/
+│  ├─ 多个LFP信号的.txt  
+│  └─ README.md  
+├─ hls/  
+│  ├─ EpilepsyDetection/        # 你的 HLS 源码目录（.h/.cpp/coef 等）  
+│  └─ README.md  
+├─ hls/  
+│  ├─ Decimator/        # 你的 HLS 源码目录（.h/.cpp/coef 等）  
+│  └─ README.md  
+├─ vivado/  
+│  ├─ bd/create_bd.tcl          # 从 0 重建 BD（含 IP 参数、连线、地址映射）  
+│  ├─ scripts/build_bit.tcl     # 一键综合实现 & 生成 bit、导出 .hwh/.xsa  
+│  └─ README.md  
+├─ overlays/  
+│  └─ epilepsy_detection/  
+│     ├─ detection_final.bit    # 发布版产物（建议放到 Release，而不是 git 本体）  
+│     └─ detection_final.hwh  
+└─ pynq/  
+   ├─ run_demo.py               # 无交互运行：加载 overlay、DMA 喂数、LED MMIO、保存结果  
+   ├─ mmio_led.py               # LED 控制封装  
+   └─ README.md  
 
 

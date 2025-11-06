@@ -36,8 +36,8 @@ epilepsy-fpga/
 │     ├─ detection_final.bit    # 发布版产物（建议放到 Release，而不是 git 本体）  
 │     └─ detection_final.hwh  
 └─ pynq/  
-   ├─ run_demo.py               # 无交互运行：加载 overlay、DMA 喂数、LED MMIO、保存结果  
-   ├─ mmio_led.py               # LED 控制封装  
-   └─ README.md  
+      ├─ run_demo.py               # 无交互运行：加载 overlay、DMA 喂数、LED MMIO、保存结果  
+      ├─ mmio_led.py               # LED 控制封装  
+      └─ README.md  
 
 

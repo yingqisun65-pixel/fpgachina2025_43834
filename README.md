@@ -32,7 +32,7 @@ epilepsy-fpga/
 │  ├─ detection_final.bit   
 │  └─ detection_final.hwh  
 └─ pynq/  
-      ├─ run_demo.py               # 无交互运行：加载 overlay、DMA 喂数、LED MMIO、保存结果  
+      ├─ epilepsy_detection.py               # 无交互运行：加载 overlay、DMA 喂数、LED MMIO、保存结果  
       └─ README.md  
 
 

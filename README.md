@@ -20,7 +20,7 @@ epilepsy-fpga/
 ├─ signal/
 │  ├─ 多个LFP信号的.txt  
 │  └─ README.md  
-├─ hls/  
+├─ Vitis/  
 │  ├─ EpilepsyDetection/        # 你的 HLS 源码目录（.h/.cpp/coef 等）   
 │  ├─ Decimator/        # 你的 HLS 源码目录（.h/.cpp/coef 等）  
 │  └─ README.md  

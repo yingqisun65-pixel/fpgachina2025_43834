@@ -10,3 +10,5 @@
 ## 生成建议 / Tips
 - 从 CSV 转：仅保留一列，保存成纯文本。
 - Python 读取会用：`np.loadtxt('data/signal_demo_small.txt', dtype=np.int16)`.
+
+>文件中几个txt都符合要求

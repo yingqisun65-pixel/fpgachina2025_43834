@@ -29,9 +29,8 @@ epilepsy-fpga/
 │  ├─ scripts/build_bit.tcl     # 一键综合实现 & 生成 bit、导出 .hwh/.xsa  
 │  └─ README.md  
 ├─ overlays/  
-│  └─ epilepsy_detection/  
-│     ├─ detection_final.bit   
-│     └─ detection_final.hwh  
+│  ├─ detection_final.bit   
+│  └─ detection_final.hwh  
 └─ pynq/  
       ├─ run_demo.py               # 无交互运行：加载 overlay、DMA 喂数、LED MMIO、保存结果  
       ├─ mmio_led.py               # LED 控制封装  

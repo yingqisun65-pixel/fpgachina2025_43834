@@ -1,1 +1,12 @@
 
+## Decimator
+在Vitis新建项目，命名为"Decimator"
+将Decimator.h、Decimator.cpp文件导入Decimator项目源文件
+将Decimator_test.cpp文件导入Decimator的testbench，并将该文件信号读取地址改为当前信号txt文件实际地址
+运行Decimator项目的C仿真，观察该模块输出结果
+
+## EpilepsyDetection
+在Vitis新建项目，命名为"EpilepsyDetection"
+将EpilepsyDetection.h、EpilepsyDetection.cpp文件导入EpilepsyDetection项目源文件
+将EpilepsyDetection_test.cpp文件导入EpilepsyDetectionr的testbench，并将该文件信号读取地址改为Decimator项目输出信号txt文件实际地址
+运行EpilepsyDetection项目的C仿真，观察该模块输出结果

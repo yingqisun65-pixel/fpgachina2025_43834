@@ -14,25 +14,25 @@
 
 epilepsy-fpga/  
 ├─ README.md  
-├─ REPRODUCIBLE.md              # 逐步复现实验手册 
+├─ REPRODUCIBLE.md             
 ├─ LICENSE                     
 ├─ .gitignore  
 ├─ signal/
 │  ├─ 多个LFP信号的.txt  
 │  └─ README.md  
 ├─ HLS(Vitis)/  
-│  ├─ EpilepsyDetection/       # HLS 源码目录（.h/.cpp/coef 等）  
-│  ├─ Decimator/               # HLS 源码目录（.h/.cpp/coef 等）  
+│  ├─ EpilepsyDetection/        
+│  ├─ Decimator/             
 │  └─ README.md  
 ├─ vivado/  
-│  ├─ bd/create_bd.tcl          # 从 0 重建 BD（含 IP 参数、连线、地址映射）  
-│  ├─ scripts/build_bit.tcl     # 一键综合实现 & 生成 bit、导出 .hwh/.xsa  
+│  ├─ bd/create_bd.tcl          
+│  ├─ scripts/build_bit.tcl       
 │  └─ README.md  
 ├─ overlays/  
 │  ├─ detection_final.bit   
 │  └─ detection_final.hwh  
 └─ pynq/  
-      ├─ epilepsy_detection.py               # 无交互运行：加载 overlay、DMA 喂数、LED MMIO、保存结果  
+      ├─ epilepsy_detection.py               
       └─ README.md  
 
 
